@@ -24,6 +24,13 @@
 # \e[2K => clear everything on the current line
 
 # Git status symbols
+ZSH_THEME_GIT_PROMPT_UNTRACKED="%F{red}%"
+ZSH_THEME_GIT_PROMPT_ADDED="%F{green}✓"
+ZSH_THEME_GIT_PROMPT_MODIFIED="%F{blue}*"
+ZSH_THEME_GIT_PROMPT_DELETED="%F{red}✖"
+ZSH_THEME_GIT_PROMPT_RENAMED="%F{blue}~"
+ZSH_THEME_GIT_PROMPT_UNMERGED="%F{cyan}#"
+
 ZSH_THEME_GIT_PROMPT_PREFIX="%F{white}✶ %f%F{yellow}"
 ZSH_THEME_GIT_PROMPT_SUFFIX=" ⇣%f "
 
@@ -123,7 +130,7 @@ pasta_nvm_status() {
 
 # Git status
 pasta_git_status() {
-  echo -n "$(git_prompt_info) $(git_prompt_status)"
+  echo -n "$(git_prompt_info)$(git_prompt_status)$f"
 }
 
 # Compose prompt
