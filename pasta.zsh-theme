@@ -24,7 +24,7 @@
 # \e[2K => clear everything on the current line
 
 # Git status symbols
-ZSH_THEME_GIT_PROMPT_UNTRACKED="%F{red}%"
+ZSH_THEME_GIT_PROMPT_UNTRACKED="%F{red}%%"
 ZSH_THEME_GIT_PROMPT_ADDED="%F{green}✓"
 ZSH_THEME_GIT_PROMPT_MODIFIED="%F{blue}*"
 ZSH_THEME_GIT_PROMPT_DELETED="%F{red}✖"
